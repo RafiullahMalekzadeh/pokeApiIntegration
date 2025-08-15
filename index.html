@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pokémon Search</h1>
+            <p>Search for any Pokémon by name or ID</p>
+        </header>
+        
+        <main>
+            <div class="search-section">
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="pokemonInput" 
+                        placeholder="Enter Pokémon name or ID (e.g., pikachu, 25)"
+                        autocomplete="off"
+                    >
+                    <button id="searchBtn">Search</button>
+                </div>
+            </div>
+            
+            <div class="results-section" id="resultsSection">
+                <!-- Pokémon data will be displayed here -->
+            </div>
+            
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Searching for Pokémon...</p>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
